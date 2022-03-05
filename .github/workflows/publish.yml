@@ -70,7 +70,7 @@ jobs:
         uses: softprops/action-gh-release@v1
         with:
           tag_name: ${{ env.TARGET_REF }}
-          files: build/upload/*
+          files: build/uploads/*
           fail_on_unmatched_files: true
 
   finalize:
