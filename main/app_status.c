@@ -11,7 +11,7 @@ static const uint32_t STATUS_LED_CONNECTING_INTERVAL = 500u;
 static const uint32_t STATUS_LED_PROV_INTERVAL = 100u;
 static const uint32_t STATUS_LED_READY_INTERVAL = 100u;
 static const uint32_t STATUS_LED_READY_COUNT = 3;
-//
+
 static EventGroupHandle_t event_group = NULL;
 
 #define MQTT_CONNECTED_BIT BIT0
