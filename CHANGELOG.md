@@ -1,5 +1,12 @@
 # Changelog
 
+### [2.0.1](https://github.com/mdvorak-iot/esp-app-release-test/compare/v2.0.0...v2.0.1) (2022-03-05)
+
+
+### Bug Fixes
+
+* continue on build error ([4fe7880](https://github.com/mdvorak-iot/esp-app-release-test/commit/4fe7880b352240bca15cd811f4f99499d1aad437))
+
 ## [2.0.0](https://github.com/mdvorak-iot/esp-app-release-test/compare/v1.2.1...v2.0.0) (2022-03-05)
 
 
