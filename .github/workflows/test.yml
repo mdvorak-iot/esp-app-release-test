@@ -1,0 +1,47 @@
+name: build
+
+on:
+  push:
+    branches: [ "main" ]
+    tags: [ "v*" ]
+    paths-ignore: [ "*.md" ]
+  pull_request:
+    branches: [ "main" ]
+    paths-ignore: [ "*.md" ]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+env:
+  IDF_COMPONENT_MANAGER: "1"
+
+jobs:
+  idf:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        # ESP-IDF versions and targets
+        idf_ver: [ v4.3, v4.4 ]
+        idf_target: [ esp32, esp32s2, esp32s3, esp32c3 ]
+        # Filter out unsupported combinations
+        exclude:
+          - { idf_target: esp32c3, idf_ver: v4.3 }
+          - { idf_target: esp32s3, idf_ver: v4.3 }
+    container: espressif/idf:release-${{ matrix.idf_ver }}
+    env:
+      IDF_TARGET: ${{ matrix.idf_target }}
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Setup Component Manager
+        if: idf_ver == v4.3
+        run: |
+          . ${IDF_PATH}/export.sh
+          pip install --upgrade idf-component-manager
+
+      - name: Build
+        run: |
+          . ${IDF_PATH}/export.sh
+          idf.py build
