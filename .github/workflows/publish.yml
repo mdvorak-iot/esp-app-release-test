@@ -38,6 +38,7 @@ jobs:
         # Pre-built configurations
         include:
           - { idf_target: esp32 }
+          - { idf_target: esp32s2 }
     continue-on-error: true
     container: espressif/idf:release-v4.4
     env:
@@ -71,7 +72,7 @@ jobs:
         uses: softprops/action-gh-release@v1
         with:
           tag_name: ${{ env.TARGET_REF }}
-          files: build/upload/*
+          files: build/uploads/*
           fail_on_unmatched_files: true
 
   finalize:
