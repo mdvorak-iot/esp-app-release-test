@@ -2,7 +2,7 @@
 
 [![test](https://github.com/mdvorak-iot/esp-app-release-test/actions/workflows/test.yml/badge.svg)](https://github.com/mdvorak-iot/esp-app-release-test/actions/workflows/test.yml)
 
-TODO description.
+TODO description. TODO
 
 ## Usage
 
