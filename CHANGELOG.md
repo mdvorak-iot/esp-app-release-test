@@ -1,5 +1,17 @@
 # Changelog
 
+### [2.1.1](https://github.com/mdvorak-iot/esp-app-release-test/compare/v2.1.0...v2.1.1) (2022-03-05)
+
+
+### Bug Fixes
+
+* Fake commit ([44ba458](https://github.com/mdvorak-iot/esp-app-release-test/commit/44ba458f10df228f5899f4bb330754d9cf194979))
+* Fake commit 222 ([e02044f](https://github.com/mdvorak-iot/esp-app-release-test/commit/e02044f763d8f25c751073a31ef91f7ad1c237be))
+* Fake commit 3 ([132260e](https://github.com/mdvorak-iot/esp-app-release-test/commit/132260ea706881852f9bc7061970b2bfb2be8882))
+* releaseType ([853abfb](https://github.com/mdvorak-iot/esp-app-release-test/commit/853abfb225eeb5755dab34e2fd53cd6edcbbc74b))
+* removed primaryBranch ([43edf7b](https://github.com/mdvorak-iot/esp-app-release-test/commit/43edf7bfb1816f796ad661d9ae07160fe32efca6))
+* try release-please bot ([b842760](https://github.com/mdvorak-iot/esp-app-release-test/commit/b842760d949ca82a388460910d4a178798a81132))
+
 ### [2.0.5](https://github.com/mdvorak-iot/esp-app-release-test/compare/v2.0.4...v2.0.5) (2022-03-05)
 
 
