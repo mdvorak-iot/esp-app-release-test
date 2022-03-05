@@ -58,7 +58,7 @@ jobs:
           IDF_TARGET: ${{ matrix.idf_target }}
         run: |
           . ${IDF_PATH}/export.sh
-          idf.py buildxxxx
+          idf.py build
 
       # This is needed, since softprops/action-gh-release does not support asset renaming
       - name: Prepare assets
