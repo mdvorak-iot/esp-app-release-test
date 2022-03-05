@@ -1,5 +1,12 @@
 # Changelog
 
+### [2.0.3](https://github.com/mdvorak-iot/esp-app-release-test/compare/v2.0.2...v2.0.3) (2022-03-05)
+
+
+### Bug Fixes
+
+* rey another finalize cond ([239f550](https://github.com/mdvorak-iot/esp-app-release-test/commit/239f550f9b9394f0ce2c125a614bba7b6b2b1255))
+
 ### [2.0.2](https://github.com/mdvorak-iot/esp-app-release-test/compare/v2.0.1...v2.0.2) (2022-03-05)
 
 
