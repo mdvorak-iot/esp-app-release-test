@@ -84,7 +84,8 @@ jobs:
           tag_name: ${{ env.TARGET_REF }}
           append_body: true
           body: |
-            *All assets built successfully*
+            
+            *<sub>All assets built successfully</sub>*
 
       - name: Failure
         if: ${{ needs.build.result != 'success' }}
@@ -93,4 +94,5 @@ jobs:
           tag_name: ${{ env.TARGET_REF }}
           append_body: true
           body: |
+            
             **Some assets failed to build.**
